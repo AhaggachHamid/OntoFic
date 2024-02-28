@@ -1,0 +1,702 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/labrouk/ontologies/2022/9/untitled-ontology-33"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/labrouk/ontologies/2022/9/untitled-ontology-33">
+    <Prefix name="" IRI="http://www.semanticweb.org/labrouk/ontologies/2022/9/untitled-ontology-33#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Prefix name="untitled-ontology-33" IRI="http://www.semanticweb.org/labrouk/ontologies/2022/9/untitled-ontology-33/"/>
+    <Annotation>
+        <AnnotationProperty IRI="/PreferredNamespacePrefix"/>
+        <Literal>ontofic</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="/PreferredNamespaceUri"/>
+        <Literal>https://industryportal.enit.fr/ontologies/ONTOFIC</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="/license"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://opensource.org/licenses/MIT</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:description"/>
+        <Literal>The ontology, referred to as OntoFiC, is designed to encapsulate the domain of financial transactions with a particular focus on fraud detection within the SWIFT network.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:devlopedBy"/>
+        <Literal>SkaizenGroup</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:title"/>
+        <Literal>Ontology for Financial Fraud Detection (ONTOFIC)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://www.iziflo.com/?en/ontology/ocd/Acronym"/>
+        <Literal>OntoFic</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="https://www.iziflo.com/?en/ontology/ocd/Contact"/>
+        <Literal>Hamza Chergui, hchergui@skaizengroup.fr</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Association"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreditorAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DebtorAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IntermediaryAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Message"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrivateCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#AdministrativeActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#AgricultureActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#EducationActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#EnergyActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#EntertainmentActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#ExtraterritorialActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#FinancialActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#HealthActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#HospitalityActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#HouseholdsActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#InformationActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#LogisticsActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#ManufacturingActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#MiningActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#OtherSevicesActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#PublicAdminActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#RealestateActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#ScientificActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#TradeActivities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Water&amp;WasteActivities"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCreditor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCreditorAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDebtor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDebtorAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInstructingAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMessage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTransaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasInstructedAgent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#BICFI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ClrSysMmbld"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CreDtTm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CtryOfRes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#InstrId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LEI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MsgId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#PmtId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SttlmInf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#UETR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#amount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#currency"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBirthDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFirstName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLastName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPersonalData"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/AgentCountry"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/AgentCurrencyCount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/IsFraud"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/PreferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://www.iziflo.com/?en/ontology/ocd/Contact"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="https://www.iziflo.com/?en/ontology/ocd/Acronym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:devlopedBy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="owl:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/PreferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="/license"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Association"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Company"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditorAgent"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DebtorAgent"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IntermediaryAgent"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#Customer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Customer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrivateCompany"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicCompany"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transaction"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasMessage"/>
+            <Class IRI="#Message"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transaction"/>
+        <ObjectMaxCardinality cardinality="4">
+            <ObjectProperty IRI="#hasMessage"/>
+            <Class IRI="#Message"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#AdministrativeActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#AgricultureActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#EducationActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#EnergyActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#EntertainmentActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#ExtraterritorialActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#FinancialActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#HealthActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#HospitalityActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#HouseholdsActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#InformationActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#LogisticsActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#ManufacturingActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#MiningActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#OtherSevicesActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#PublicAdminActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#RealestateActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#ScientificActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#TradeActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Water&amp;WasteActivities"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Agent"/>
+        <Class IRI="#Customer"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCreditor"/>
+        <ObjectProperty IRI="#hasDebtor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMessage"/>
+        <ObjectProperty IRI="#hasTransaction"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasTransaction"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasMessage"/>
+    </InverseFunctionalObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#hasCreditor"/>
+    </ReflexiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#hasDebtor"/>
+    </ReflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#Organization"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCreditor"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCreditorAgent"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDebtor"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDebtorAgent"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInstructingAgent"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMessage"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTransaction"/>
+        <Class IRI="#Message"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInstructedAgent"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="http://www.skaizengroup.fr/ontologies/kyc.owl#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCreditor"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCreditorAgent"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDebtor"/>
+        <Class IRI="#Customer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDebtorAgent"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInstructingAgent"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMessage"/>
+        <Class IRI="#Message"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTransaction"/>
+        <Class IRI="#Transaction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasInstructedAgent"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasBirthDate"/>
+        <DataProperty IRI="#hasPersonalData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasFirstName"/>
+        <DataProperty IRI="#hasPersonalData"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLastName"/>
+        <DataProperty IRI="#hasPersonalData"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#BICFI"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ClrSysMmbld"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CreDtTm"/>
+        <Class IRI="#Message"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#CtryOfRes"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ID"/>
+        <Class IRI="#Customer"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstrId"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#LEI"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#MsgId"/>
+        <Class IRI="#Message"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#PmtId"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SttlmInf"/>
+        <Class IRI="#Message"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#UETR"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#amount"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#currency"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBirthDate"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasFirstName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLastName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AgentCountry"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AgentCountry"/>
+        <Class IRI="#CreditorAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AgentCountry"/>
+        <Class IRI="#DebtorAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AgentCountry"/>
+        <Class IRI="#IntermediaryAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AgentCurrencyCount"/>
+        <Class IRI="#Agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AgentCurrencyCount"/>
+        <Class IRI="#CreditorAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AgentCurrencyCount"/>
+        <Class IRI="#DebtorAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/AgentCurrencyCount"/>
+        <Class IRI="#IntermediaryAgent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/IsFraud"/>
+        <Class IRI="#Transaction"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#BICFI"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ClrSysMmbld"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CreDtTm"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#CtryOfRes"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#InstrId"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LEI"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#MsgId"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#PmtId"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SttlmInf"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#UETR"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#amount"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#currency"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBirthDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasFirstName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLastName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/AgentCurrencyCount"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/IsFraud"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LEI</IRI>
+        <Literal xml:lang="en">Legal Entity Identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PmtId</IRI>
+        <Literal xml:lang="en">Payment Identification</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SttlmInf</IRI>
+        <Literal xml:lang="en">SttlmInf stands for Settlement Information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UETR</IRI>
+        <Literal xml:lang="en">UETR stands for Unique End-to-end Transaction Reference</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
